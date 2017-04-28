@@ -18,4 +18,6 @@ public void setPrice(double price) {
 	
 }
 public abstract String getName();
+
+
 }
