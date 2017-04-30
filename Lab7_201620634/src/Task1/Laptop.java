@@ -41,17 +41,17 @@ public class Laptop extends Product implements Networked, DataStorage{
 
 	public void setUsedCapacity(double usedCapacity) {
 		
-		if(usedCapacity <0) {
+		if(usedCapacity <0 && usedCapacity<totalCapacity) {
 			System.out.println("ERROR!");
 			usedCapacity = 0;
 		}
 		this.usedCapacity = usedCapacity;
 	}
 	
-	
+	@Override
 	public String getName() {
 		String name;
-		name = "Mark";
+		name = "Mark(Laptop)";
 		return name;
 	}
 	

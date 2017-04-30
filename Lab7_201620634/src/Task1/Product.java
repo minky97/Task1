@@ -20,7 +20,7 @@ public void setPrice(double price) {
 public abstract String getName();
 
 public Product(){
-	System.out.println("product constructor.");
+	
 }
 
 }

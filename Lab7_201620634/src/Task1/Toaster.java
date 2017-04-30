@@ -11,7 +11,7 @@ public class Toaster extends Product implements Cooker{
 		// TODO Auto-generated method stub
 		
 		String food;
-		food="It prepares bread.";
+		food="bread";
 		return food;
 	}
 
