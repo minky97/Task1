@@ -1,5 +1,5 @@
-
-public abstract class SmartTV extends Product{
+package Task1;
+public class SmartTV extends Product implements Networked{
 
 	private int channel;
 	
@@ -8,6 +8,7 @@ public abstract class SmartTV extends Product{
 	}
 	
 	public void setChannel(int channel) {
+		if(channel<=0) System.out.println("Error!");
 		this.channel = channel;
 	}
 	
@@ -17,11 +18,12 @@ public abstract class SmartTV extends Product{
 	}
 	
 	public boolean isConnected(){
-		return;
+		return true;
 	}
-	
+	@Override
 	public double maxSpeed(){
-		return;
+		double max=14.0;
+		return max;
 	}
 	
 	@Override
