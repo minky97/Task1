@@ -2,13 +2,14 @@ package Task1;
 
 public class Laptop extends Product implements Networked{
 	
-	
-	
 	private double totalCapacity;
 	private double usedCapacity;
 	
 	
-	Laptop() {}
+	public Laptop() {
+		double price = 10.0;
+		super.setPrice(price);
+	}
 	
 	
 	public double getFreeCapacity() {
