@@ -16,9 +16,11 @@ public class SmartTV extends Product implements Networked{
 		double price=12.0;
 		super.setPrice(price);
 	}
-	
+	@Override
 	public boolean isConnected(){
-		return true;
+	
+		boolean connect = true;
+		return connect;
 	}
 	@Override
 	public double maxSpeed(){
