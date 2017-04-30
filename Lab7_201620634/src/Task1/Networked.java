@@ -2,7 +2,7 @@ package Task1;
 
 public interface Networked {
 	
-	public abstract boolean isConnected();
-	public abstract double maxSpeed();
+	public boolean isConnected();
+	public double maxSpeed();
 
 }
