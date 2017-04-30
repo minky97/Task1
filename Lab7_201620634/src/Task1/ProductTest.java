@@ -6,11 +6,12 @@ public class ProductTest {
 		System.out.println("Constructor product test");
 		
 	}
+
 	public void testProduct(Product p){
 		System.out.println(p.getName());
 		System.out.println(p.getPrice());
-	}
-	public void testDataStorage(DataStorage l){
+}
+public void testDataStorage(DataStorage l){
 		System.out.println(l.getFreeCapacity());
 	}
 	public void testNetworked(Networked n){
@@ -48,3 +49,4 @@ public class ProductTest {
 	}
 
 }
+
