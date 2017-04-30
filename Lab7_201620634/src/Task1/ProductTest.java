@@ -11,15 +11,15 @@ public class ProductTest {
 		System.out.println(p.getName());
 		System.out.println(p.getPrice());
 }
-public void testDataStorage(DataStorage l){
+	public void testDataStorage(DataStorage l){
 		System.out.println(l.getFreeCapacity());
 	}
 	public void testNetworked(Networked n){
-		System.out.println("Max speed is "+n.maxspeed());
-		if(n.isconnected==true){
+		System.out.println("Max speed is "+n.maxSpeed());
+		if(n.isConnected()==true){
 			System.out.println("Avaliable connect");
 		}
-		else if(n.isconnected==false){
+		else if(n.isConnected()==false){
 			System.out.println("Inavaliable connect");
 		}
 	}

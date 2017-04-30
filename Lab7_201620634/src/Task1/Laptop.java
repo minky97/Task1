@@ -1,6 +1,6 @@
 package Task1;
 
-public class Laptop extends Product implements Networked{
+public class Laptop extends Product implements Networked, DataStorage{
 	
 	private double totalCapacity;
 	private double usedCapacity;
@@ -11,14 +11,12 @@ public class Laptop extends Product implements Networked{
 		super.setPrice(price);
 	}
 	
-	
+	@Override
 	public double getFreeCapacity() {
-		double freeCapacity;
-		freeCapacity = 99;
-		return freeCapacity;
+		return totalCapacity - usedCapacity;
 	}
 	
-	
+	@Override
 	public void format() {
 		System.out.println("format!");
 	}
